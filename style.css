@@ -1,0 +1,179 @@
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header Styling */
+.header {
+  background-color: #f4b4c5;
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  font-size: 2rem;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li {
+  font-size: 1rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+nav ul li:hover {
+  text-decoration: underline;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: #fff;
+  margin: 10px 0;
+}
+
+/* Search Bar Styling */
+.searchbar {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.searchbar input {
+  width: 50%;
+  padding: 10px;
+  border: 2px solid #f4b4c5;
+  border-radius: 20px;
+  font-size: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.searchbar input::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+/* Products Section Styling */
+.products {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.box {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 300px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.box:hover {
+  transform: translateY(-10px);
+}
+
+.box img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.box p {
+  font-size: 0.9rem;
+  text-align: justify;
+  color: #555;
+}
+
+/* About Section Styling */
+.about {
+  padding: 20px;
+  background-color: #f4e7ea;
+  border-top: 3px solid #f4b4c5;
+  border-bottom: 3px solid #f4b4c5;
+}
+
+.about h1 {
+  font-size: 2rem;
+  color: #c04a64;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.about p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Contact Section Styling */
+.contact {
+  padding: 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 1.5rem;
+  color: #c04a64;
+  margin-bottom: 10px;
+}
+
+.contact p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin: 5px 0;
+}
+
+.contact p:first-of-type {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .searchbar input {
+      width: 80%;
+  }
+
+  .products {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .box {
+      width: 90%;
+  }
+}
